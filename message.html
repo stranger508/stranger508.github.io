@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="google">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+ 
+    #mgs {
+        width: 400px;
+        color: black;
+        font-style: italic;
+        border-width: 5px;
+        margin: 0 auto;
+    }
+ 
+    #text {
+        width: 400px;
+        height: 150px;
+        padding: 20px;
+        font-size: 20px;
+    }
+ 
+    li {
+        list-style: none;
+        border-bottom: 1px solid #999;
+        line-height: 20px;
+        margin-top: 30px;
+    }
+ 
+    span {
+        float: right;
+    }
+</style>
+ 
+<body>
+      <div>
+            </div>
+	  <a href='./index.html'><span>First</span></a>
+                <a href='./about.html'><span>About</span></a>
+                <a href='./hobbies.html'><span>Interests</span></a>
+		    <a href='./message.html'><span>Messages</span></a>
+            </div>
+
+        </div>
+              
+    <div id="mgs">
+        <textarea id="text"></textarea><br>
+        <input type="button" id="btn" value="提交">
+        <ul class="list"></ul>
+    </div>
+        <script>
+            var btn = document.getElementById('btn');
+            var list = document.querySelector('.list');
+            var text = document.getElementById('text');
+            btn.onclick = function () {
+                if (text.value == '') {
+                    alert('你没有输入内容。')
+                } else {
+                    var li = document.createElement('li');
+                     var time = new Date();
+                    var mytime = time.getFullYear() + '-' + (time.getMonth() + 1) + '-' + time.getDate();
+                    li.innerHTML = text.value + '<span>' + mytime + '\t' + '<button>删除</button></span>';
+                    text.value = '';
+                    list.insertBefore(li, list.children[0]);
+                    var allB = document.querySelectorAll('button');
+                    for (var i = 0; i < allB.length; i++) {
+                        allB[i].onclick = function () {
+                            list.removeChild(this.parentNode.parentNode);
+                        }
+                    }
+ 
+                }
+            }
+
+      
+        </script>
+</body>
+ 
+</html>
