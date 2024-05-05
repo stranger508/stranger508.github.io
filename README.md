@@ -1,1 +1,1 @@
-www.stranger508.github.io
+stranger508.github.io
