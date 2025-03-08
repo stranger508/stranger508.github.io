@@ -252,30 +252,3 @@ audio {
         opacity: .8;
     }
 }
-
-.icons {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 400px;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-
-.icons_items {
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-    margin-top: 80px;
-    margin-left: 5px;
-    margin-right: 5px;
-    width: 200px;
-    height: 220px;
-    
-}
-
-.icons_items_imgs {
-    border-radius: 10%;
-    width: 200px;
-    height: 120px;
-    margin-bottom: 30px;
-}
