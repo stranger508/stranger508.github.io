@@ -224,37 +224,6 @@ em,span{display: inline-block;}
 .show .showRight li .open{display: none;}
 .show .showRight .onShow .open{display: block;}
 .show .showRight .onShow .close{display: none;}
-
-
 /* */
-.sel_Cir{
-    margin-left: 250px;
-    margin-right: 265px;
-    font:12px/20px "Microsoft Yahei", arial,sans-serif; 
 
-}
-.cirShow{/*height: 420px;*/ background: rgb(252, 252, 241); overflow: hidden;}
-.cirBig{ width: 1000px; height: 292px; border-bottom: 1px solid #313A25;}
-.cirBig .middle{  border-left: 1px solid #313A25;  border-right: 1px solid #313A25; width: 331px;}
-.cirBig li{width: 333px;   height: 242px; float: left; text-align: center; padding-top: 50px;}
-.cirBig .cirHead{width: 80px; height: 80px; border-radius: 50%; position: relative;}
-.cirBig .cirHead .fire{width: 24px; height: 24px; position: absolute; right: 0; top: 0; background-position: -23px -66px;}
-.cirBig .cirHead img{width: 100%; height: 100%; border-radius: 50%; -ms-border-radius: 50%; -webkit-border-radius: 50%;}
-.cirBig li h3{font-size: 18px; width: 242px; height: 20px; overflow: hidden; margin: 16px auto 8px; color: #212121; white-space: nowrap; text-overflow: ellipsis;}
-.cirBig li h3 a:hover{color: #f26552;}
-.cirBig li .little{ width:226px; height: 32px; line-height: 16px; overflow: hidden; margin: 0 auto; text-overflow: ellipsis; display: -webkit-box;  -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
-.cirBig li .attent{margin-top: 20px;}
-.cirBig li .attent s{float: left; width: 17px; height: 18px; background-position: -49px -68px; margin: 0 8px 0 10px;}
-.cirBig li .attent i{float: left; font-size: 14px;}
-.cirBig li .attent .cards{background-position: -68px -68px; }
-.cirLittle{padding: 0 40px; height: 129px;}
-.cirLittle li{width: 162px; padding: 30px 0 0 22px; overflow: hidden; float: left;}
-.cirLittle li .litHead{width: 60px; height: 60px; border-radius: 50%; float: left;}
-.cirLittle li h3{color: #212121;  width: 64px; height: 20px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
-.cirLittle li .litHead img{width: 100%; height: 100%; border-radius: 50%;}
-.cirLittle li .bookCon{float: left; padding-left: 10px;}
-.cirLittle li h3{font-size: 16px; margin-bottom: 2px;}
-.cirLittle li .bookCon .fans{float: left; width: 14px; height: 14px; background-position: -50px -99px; margin: 3px 4px 0 0;}
-.cirLittle li .bookCon p{ height: 18px; font-size: 12px;}
-.cirLittle li .bookCon .cards{float: left; width: 14px; height: 15px; background-position: -70px -99px; margin: 4px 4px 0 0;}
 
