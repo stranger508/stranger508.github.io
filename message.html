@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" href="css/message.css">
+</head>
+  <body>
+	<div class="message">
+		<div class="stars"></div>
+		<h3 class="message_tit"></h3>
+		<img class="message_bgc" src="picture/liuyan.jpg" alt="">
+		<div class='ribbon'>
+			<a href='./index.html'><span>First</span></a>
+			<a href='./about.html'><span>About</span></a>
+			<a href='./hobbies.html'><span>Interests</span></a>
+		<a href='./message.html'><span>Messages</span></a>
+		</div>
+	<div class="cover"></div>
+	<div style="text-align:right;margin-bottom: 2rem;>
+		<button id="clearMessages"
+		style="background: #c0392b; color: white; padding: 10px 20px; border-radius: 8px;">清空所有留言</button></div>	
+	<div class="container">
+		<form class="message-form" id="messageForm">
+			<div class="form-group">
+				<input type="text" placeholder="您的姓名" id="username" required>
+			</div>
+			<div class="form-group">
+				<textarea rows="5" placeholder="请输入留言内容..." id="content" required></textarea>
+			</div>
+			<button type="submit">发布留言</button>
+		</form>
+		
+		<div class="messages" id="messageList">
+			<!-- 留言示例 -->
+			<div class="message">
+				<div class="avatar"></div>
+				<div>
+					<h3>Name</h3>
+					<p>这是一个示例留言，欢迎大家在这里交流！</p>
+					<small>2025-01-01 00:00:00</small>
+				</div>
+			</div>
+		</div>
+	</div>
+		<script src="js/message.js"></script>
+  </body>
+</html>
